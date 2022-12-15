@@ -1,39 +1,37 @@
-# Welcome to Jekyll!
-#
-# This config file is meant for settings that affect your whole blog, values
-# which you are expected to set up once and rarely edit after that.
-# This file is *NOT* reloaded automatically when you use 'bundle exec jekyll serve'.
-# If you change this file, please restart the server process.
-
 # Site settings
-# are used to personalize your new site. If you look in the HTML files,
-# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
-# You can create any custom variable you would like, and they will be accessible
-# in the templates via {{ site.myvariable }}.
+title: Antonio Trento, theme Jeky New Age, the start Bootstrap themplate build for jekyll
+email:
+description: A jekyll template for landing pages, portfolio and blogging
 
-theme: jekyll-agency
-baseurl: ""
-url    : "https://yiyisoda.github.io/" # the base hostname & protocol for your site, e.g. http://example.com
+baseurl: "" # the subpath of your site, e.g. /blog/ (If you use organization leave empty)
+url: "https://jekynewage.github.io" # the base hostname & protocol for your site
 
+#Google Ad Words Data from scripts code (using Google responsive options) and ad client
+data-ad-slot: 
+data-ad-client: 
+google_ad_client: 
 
-title      : Your Awesome Website
-email      : yiyisoda2022@yahoo.com #this is also the email contact forms will go to
-description: "Site description"
-author     : YiYiSoDa
-# logo:     #optional, defaults to site title
-  # path: assets\img\clients\creative-market.jpg
-  # height: 60 #height in px, defaults to 52px
+google_analytics: 
+addthis_id: 
+disqus_account: 
 
-locale: "en-US" # See available languages in _data/sitetext.yml
+# Social networks usernames (many more available: flickr, dribbble, pinterest, instagram, tumblr, linkedin, etc.) see all icon at fontawesome.io
+social:
+  - title: twitter
+    url: https://twitter.com/lantoniotrento
+  - title: facebook
+    url: https://facebook.com/lantoniotrento
+  - title: google-plus
+    url: https://plus.google.com/+AntoniotrentoIt
+  #- title: github
+  #  url: http://github.com/jekyll
 
-analytics:
-  google: #Google Analytics tracking code here
-
-collections:
-  portfolio:
-
+# Build settings
 markdown: kramdown
+highlighter: rouge
+permalink: pretty
+paginate: 5
+exclude: ["less","node_modules","Gruntfile.js","package.json","README.md"]
 
-# Uncomment following line to use Formspree form ID based URL instead of email based URL
-# Details: https://help.formspree.io/hc/en-us/articles/360017735154-How-to-prevent-spam
-# formspree_form_path: "f/a_form_id"
+gems: [jekyll-paginate, jekyll-feed]
+# Build settings
