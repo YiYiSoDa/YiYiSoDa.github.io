@@ -26,7 +26,9 @@ author     : Your Name
   # height: 60 #height in px, defaults to 52px
 
 locale: "en-US" # See available languages in _data/sitetext.yml
+
 timezone: Europe/Zurich
+
 analytics:
   google: #Google Analytics tracking code here
 
