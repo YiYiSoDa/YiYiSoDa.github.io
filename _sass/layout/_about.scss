@@ -1,0 +1,11 @@
+// Styling for the about section
+#about {
+  text-align: center;
+  color: #FFD40A;
+  height: 100%;
+  width: 100%;
+  background-image: url("#{$stereotype-image}");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}

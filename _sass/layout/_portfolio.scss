@@ -1,5 +1,13 @@
 // Styling for the portfolio section
 #portfolio {
+  text-align: center;
+  color: #FFD40A;
+  height: 100%;
+  width: 100%;
+  background-image: url("#{$onoffscreen-image}");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
   .portfolio-item {
     right: 0;
     margin: 0 0 15px;
