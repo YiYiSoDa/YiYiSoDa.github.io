@@ -164,6 +164,12 @@ header.masthead .intro-text .intro-heading { font-size: 50px; font-weight: 700; 
 
 .team-member p { margin-top: 0; }
 
+.tex { align-self: flex-end; margin-top: 50px; margin-bottom: 100px; margin-left: 100px; margin-right: 120px; }
+
+.ima { width: 400px; height: 300px; margin-left: 100px; }
+
+.para { display: flex; }
+
 section#contact { background-color: #212529; background-image: url("../img/contact.png"); background-repeat: no-repeat; background-position: center; }
 
 section#contact .section-heading { color: #fff; }
