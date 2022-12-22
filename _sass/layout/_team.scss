@@ -16,3 +16,20 @@
     margin-top: 0;
   }
 }
+.text {
+  align-self: flex-end;
+  margin-left: 175px;
+  margin-right: 175px;
+  margin-top: 50px;
+  margin-bottom: 100px;
+}
+
+.image {
+  width: 400px;
+  height: 300px;
+  margin-left: 175px;
+}
+
+.paragraph {
+  display: flex;
+}
