@@ -129,7 +129,9 @@ We want to analyse gender equality not because it is a buzzword or a trendy topi
 
 <!-- On/Off-screen content -->
 
-      
+  <!-- On-screen content -->
+
+    <!-- Cast time series -->
          <br/>
          <br/>
          <br/>
@@ -146,18 +148,18 @@ We want to analyse gender equality not because it is a buzzword or a trendy topi
 <br/>
 <div class="row">
   <div class="col-lg-8 mx-auto text">
-      <p> <b><font size= "4"> Men have ALWAYS dominated on screen.</font></b> The time series were broken down into four periods that show something interesting. At the beginning of movie industry's birth, there were only a few movies.</p> 
+      <p> <b><font size= "4"> Men have ALWAYS dominated the screen.</font></b> The time series were broken down into four periods that show something interesting. At the beginning of movie industry's birth, there were only a few movies.</p> 
       <p>Right around the second world war, there is a noticeable decrease in female cast ratio from 1935 to 1945. Wars make female situation even worse.</p>
       <p>The last period between 1990 to 2013 is representitive for the current situation. However, with movie number dramatically booming, female cast ratio is <b><font size= "4">somehow still unexpectedly LOW</b> and <b> NEVER reaches 50%</b></font>. 
       </p>
     </div>
   </div>
       <div style="text-align: center;">
-    <img src="assets/img/Time_series.png" width="80%">
+    <img src="assets/img/Time_series.png" width="70%">
   </div>
-
+   <!-- end Cast time series -->
   <br/>
-  
+    <!-- cast prediction -->
   <div class="container">
     <div class="row">
         <div class="col-lg-8 mx-auto text-center">
@@ -179,27 +181,120 @@ We want to analyse gender equality not because it is a buzzword or a trendy topi
         <p></p>
       </div>
     </div>
-
   </div>
+
   <div style="text-align: center;">
-<img src="assets/img/Time_series_prediction.png" width="60%">
+    <embed
+       type = "text/html"
+       src="plots/female_cast_projection.html"
+       width="500"
+       height="500" 
+       align="center"    
+    >
+    </embed>
 </div>
+   <!-- end cast prediction -->
+
 </br>
 </br>
-</br>
-</br>
+   <!--  explore  -->
 <div class="row">
   <div class="col-lg-8 mx-auto text">
       <p>We have now seen how the gender distribution of cast looks like over time. In the plot below you can explore the respective female cast percentage for: the recent 20 most popular genres, the genres that have the highest female ratio and the countries that produce most movies currently. 
         Try to see if you notice anything interesting. We will take a deeper dive in the next few chapters. 
       </p>
 
-      <p><font size= 6">PLACES FOR INTERACTIVE PLOTS</font></p>
-
+      <p><font size= 6">PLACES FOR INTERACTIVE PLOTS -1 explore.html</font></p>
     </div>
   </div>
+   <!--  end explore  -->
+
+  <!--   age gap  -->
+  <div class="container">
+    <div class="row">
+        <div class="col-lg-8 mx-auto text-center">
+           <br/>
+           <br/>
+           <br/>
+           <br/>
+           <h4 class="subheading text-center"> "Stay Young, Ladies!"
+           </h4>
+        </div>
+    </div>
+  </div>
+</div>
+
+<br/>
+  <div class="row">
+    <div class="col-lg-8 mx-auto text">
+        <p>It's a tale as old as time: <b>"Men age like fine wine, while women are left to wilt on the vine."</b> There is a stigma that older women are no longer needed. </p>
+        <p>Actresses are in average <font size= "4"><b>8 years younger</b></font>  than their counterpart. There is a dramatic decline once the <font size= "4"><b>"best age of 20"</b></font> is reached. This could imply that looking young and fitting into today's beauty standard is more important for actresses than actors in movie industry.
+        </p>
+      </div>
+    </div>
+
+<div style="text-align: center;">
+  <img src="assets/img/agegap.png" width="80%">
+  </div>
+  <p><font size= 6">REPLACE IT WITH INTERACTIVE PLOTS -2 age gap.html</font></p>
+  
+
+<!--  end age gap  -->
 
 
+
+
+
+<!--   countries  -->
+<div class="container">
+  <div class="row">
+      <div class="col-lg-8 mx-auto text-center">
+         <br/>
+         <br/>
+         <br/>
+         <br/>
+         <h4 class="subheading text-center"> Where is the gender-equality paradise?
+         </h4>
+      </div>
+  </div>
+</div>
+
+
+<br/>
+  <div class="row">
+    <div class="col-lg-8 mx-auto text">
+        <p>We are wondering, is there a true gender-equality paradise? Explore the plot below a bit.</p>
+        
+        </p>
+      </div>
+    </div>
+
+    <div style="text-align: center;">
+        <embed
+           type = "text/html"
+           src="plots/bokeh.html"
+           width="1000"
+           height="600"     
+        >
+        </embed>
+  </div>
+
+  <br/>
+  <div class="row">
+    <div class="col-lg-8 mx-auto text">
+        <p>Almost all countries are male-dominant. Although it does not show an immediate and direct causal effect  since other factors such as economy level and cultural elements play stronger roles, we believe it does subconsciously affect our thinking.</p>
+        <p>Besides quantitative features, it would be beneficial to check qualitative features that show how the characters are portrayed. This is what we are gonna do in later chapters.
+
+
+        
+        </p>
+      </div>
+    </div>
+
+<!--  end  countries  -->
+
+
+<!--   off-screen  -->
 
   <br/>
          <br/>
@@ -213,8 +308,9 @@ We want to analyse gender equality not because it is a buzzword or a trendy topi
             </div>
           </div>
       </div>
+    
 
-      <br/>
+<br/>
 <br/>
 <div class="row">
   <div class="col-lg-8 mx-auto text">
@@ -225,10 +321,58 @@ We want to analyse gender equality not because it is a buzzword or a trendy topi
       </p>
     </div>
   </div>
+
+  <p><font size= 6">PLACES FOR INTERACTIVE PLOTS -3 directors/writers employment.html</font></p>
+
+  <br/>
+  <br/>
+  <div class="row">
+    <div class="col-lg-8 mx-auto text">
+        <p>Things go even worse for female directors and writers. The overall growth rate of female employment in film industry is much lower than worldwide female employment rate.
+          A 2-degree least square model also implies that, in year 2127, female writer ratio will be equivalent to male. Meanwhile for directors, it's in year 2133.</p>
+          <p>In those less-exposed and darker corners, inequal competition is way more brutal. While fewer female voices and perspectives might lead to a more stereotyped portrayal of 
+          female stories and experiences. 
+   
+  
+        </p>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="row">
+          <div class="col-lg-8 mx-auto text-center">
+             <br/>
+             <br/>
+             <br/>
+             <br/>
+             <h4 class="subheading text-center"> "Women's pain is built-in"
+             </h4>
+          </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-lg-8 mx-auto text">
+          <p>There are some movie genres solely occupied by male directors and writers. Those are more about themselves, about their adventures, dreams. Some male dominant genres
+             such as action have been long criticized for objectifying women.
+            While for female directors and writers, genres seem to be unavoidably limited to painful and emotional female roles, as a mother, a lover or a sentimental woman. 
+            <p>It's not only a reflection of female behind-scene situation, but also a mirror showing what women have experienced in real world. Women's pain is built-in.
+              Before pursuit of self-fulfillment, women have to deal with what society has imposed on them - a curse of inborn duty. And their real needs as independent human beings 
+              are somehow always neglected.
+            <p>Female directors and writers might be more aware of this problem. With an improvement of gender representation off-screen, "male gaze" might be avoided in movie story-telling.  </p>
+
+            </p>  
+          </p>
+        </div>
+      </div>
+
+      <p><font size= 6">PLACES FOR INTERACTIVE PLOTS -4 directors/writers genre.html</font></p>
+  <!--  end off-screen  -->
+
 <!-- End On/Off-screen content-->
 
 
-<!-- Stereotype -->
+<!-- Stereotype heading-->
 
   <section class="page-section" id="about">
     <div class="about">
@@ -242,19 +386,77 @@ We want to analyse gender equality not because it is a buzzword or a trendy topi
 		     </div>
         </div>
       </div>
-	  
-      <div class="row text-center">
-	  
-       
-	  
-	  
-       
-      </div>
-	  
     </div>
   </section>
 
-<!-- End Stereotype -->
+<!-- End Stereotype heading-->
+
+<!-- Stereotype content-->
+
+<!-- gengre gap -->
+<br/>
+<br/>
+<div class="row">
+  <div class="col-lg-8 mx-auto text-left">
+      <p><font size="5"><b>"Boys get superhero comics and girls receive princess fairytales."</b></font>
+      <p>It is important to recognize and challenge stereotypes to promote equality, respect, and mutual understanding. Is there any difference between the portrayal of men and women？
+        Do topics vary between movies with higher female lead? By examining the gender distribution in different genres, we can gain a better understanding of the challenges and obstacles that women in these fields may face.
+      </p>
+      </p>
+    </div>
+  </div>
+  <p><font size= 6">PLACES FOR INTERACTIVE PLOTS -5  genre.html</font></p>
+<!-- end gengre gap -->
+
+
+  <!-- movie summary/word cloud-->
+  <div class="row">
+    <div class="col-lg-8 mx-auto text-left">
+        <p><font size="5"><b>"A helpless princess is always waiting for her prince."</b></font></p>
+        <p>Audience are tired of conventional stories that a helpless princess is always waiting for her prince. However, movie plots are easy to fall flat.
+          How are female and male characters portrayed? In particular, are females portrayed more positively or more negatively than males? The most commonly 
+          used adjectives to describe the characters are shown as follows.
+        </p>
+      </div>
+    </div>
+
+  <div style="text-align: center;">
+      <img src="assets/img/masks.jpg" width="60%">
+      </div>
+  
+    </br>
+  </br>
+   <div class="row">
+        <div class="col-lg-8 mx-auto text-left">
+            
+            <p>Those wordclouds give us a good idea of adjectives used to describe each gender. Words describing female are more romantic, fictional and superficial than those for male. But it is still quite vague to fully answer the question.
+              To further analyse it, a sentiment score is assigned to every adjective on a scale from -1 to 1.
+            </p>
+          </div>
+        </div>
+     <!-- end movie summary/word cloud-->
+
+     <!-- sentiment scores -->
+
+        <div style="text-align: center;">
+          <img src="assets/img/Sentiment.png" width="60%">
+          </div>
+
+
+        </br>
+      </br>
+       <div class="row">
+            <div class="col-lg-8 mx-auto text-left">
+                
+                <p>Females are generally described more positively, especially with extreme positive adjectives. This may be because females are frequently highlighted using positive adjectives such as 'beautiful', 'attractive', 'young' or 'charming', since appearance is often particularly important for female characters. This is in contrast to male characters, who may not be emphased much on appearance.
+
+                </p>
+              </div>
+            </div>
+      <!-- end sentiment scores -->
+   
+<!-- End Stereotype content-->
+
 
 
 
@@ -264,7 +466,7 @@ We want to analyse gender equality not because it is a buzzword or a trendy topi
     <div class="container">
       <div class="row">
         <div class="col-lg-12 text-center">
-          <h2 class="section-heading text"><p>How did it evolve throug time?</p>
+          <h2 class="section-heading text"><p>Evolution</p>
 </h2>
           <h3 class="section-subheading text-muted">to-be-done</h3>
         </div>
