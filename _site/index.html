@@ -155,7 +155,7 @@ We want to analyse gender equality not because it is a buzzword or a trendy topi
     </div>
   </div>
       <div style="text-align: center;">
-    <img src="assets/img/Time_series.png" width="70%">
+    <img src="assets/img/Time_series_.png" width="70%">
   </div>
    <!-- end Cast time series -->
   <br/>
@@ -212,8 +212,55 @@ We want to analyse gender equality not because it is a buzzword or a trendy topi
       <p>We have now seen how the gender distribution of cast looks like over time. In the plot below you can explore the respective female cast percentage for: the recent 20 most popular genres, the genres that have the highest female ratio and the countries that produce most movies currently. 
         Try to see if you notice anything interesting. We will take a deeper dive in the next few chapters. 
       </p>
+<!-- Distribution of female cast percentage- after TS of female cast ratio ------------------------------------------------------------------------- -->
 
-      <p><font size= 6">PLACES FOR INTERACTIVE PLOTS -1 explore.html</font></p>
+<div id="gallery_distribution_cast">
+  <select id="image-selector_distribution_cast">
+      <option value="assets/img/1908_2012.png">Average of total dataset</option>
+      <option value="assets/img/1908_1935.png">Period: 1908-1935</option>
+      <option value="assets/img/1935_1945.png">Period:1935_1945</option>
+      <option value="assets/img/1945_1990.png">Period:1945-1990</option>
+      <option value="assets/img/1990_2012.png">Period: 1990-2012</option>
+  </select>
+  <img id="image" src="assets/img/1908_2012.png"
+      alt="Period:1908-2012">
+</div>
+
+<!-- JavaScript code -->
+<script>
+  const imageSelector = document.getElementById("image-selector_distribution_cast");
+  const image = document.getElementById("image");
+
+  // Add a change event listener to the select element
+  imageSelector.addEventListener("change", function () {
+      // Set the src attribute of the image to the selected value
+      image.src = this.value;
+  });
+</script>
+
+<style>
+  #gallery_distribution_cast {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+  }
+
+  #image-selector-container {
+      margin-bottom: 50px;
+  }
+
+  #gallery_distribution_cast img {
+      width: flex;
+      height: 400px;
+      object-fit: cover;
+      display: block;
+      margin: 0 auto;
+      position: relative;
+  }
+</style>
+<!--Distribution of female cast percentage- after TS of female cast ratio-->
+
+      
     </div>
   </div>
    <!--  end explore  -->
@@ -242,10 +289,53 @@ We want to analyse gender equality not because it is a buzzword or a trendy topi
       </div>
     </div>
 
-<div style="text-align: center;">
-  <img src="assets/img/agegap.png" width="80%">
+
+    <div id="gallery_age">
+      <select id="image-selector_age">
+          <option value="assets/img/1908_2016_age.png">Average of total dataset</option>
+          <option value="assets/img/1908_1935_age.png">Period: 1908-1935</option>
+          <option value="assets/img/1935_1945_age.png">Period: 1935-1945</option>
+          <option value="assets/img/1945_1990_age.png">Period: 1945-1990</option>
+          <option value="assets/img/1990_2016_age.png">Period: 1990-2016</option>
+      </select>
+      <img id="image_age" src="assets/img/1908_2016_age.png"
+          alt="Period: 1908-2016">
   </div>
-  <p><font size= 6">REPLACE IT WITH INTERACTIVE PLOTS -2 age gap.html</font></p>
+  
+  <!-- JavaScript code -->
+  <script>
+      const image_selector_age = document.getElementById("image-selector_age");
+      const image_age = document.getElementById("image_age");
+  
+      // Add a change event listener to the select element
+      image_selector_age.addEventListener("change", function () {
+          // Set the src attribute of the image to the selected value
+          image_age.src = this.value;
+      });
+  </script>
+  
+  <style>
+      #gallery_age {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+      }
+  
+      #image-selector-container {
+          margin-bottom: 50px;
+      }
+  
+      #gallery_age img {
+          width: flex;
+          height: 400px;
+          object-fit: cover;
+          display: block;
+          margin: 0 auto;
+          position: relative;
+      }
+  </style>
+  
+  
   
 
 <!--  end age gap  -->
@@ -331,7 +421,51 @@ We want to analyse gender equality not because it is a buzzword or a trendy topi
     </div>
   </div>
 
-  <p><font size= 6">PLACES FOR INTERACTIVE PLOTS -3 directors/writers employment.html</font></p>
+<!--Director- writer percentage-->
+  <div id="gallery_director">
+    <select id="image-selector_director">
+        <option value="assets/img/Comparison with worldwide female employment rate.png">Comparison with worldwide female employment rate</option>
+        <option value="assets/img/Female director projection.png">Female director projection</option>
+        <option value="assets/img/Female writer projection.png">Female writer projection</option>
+    </select>
+    <img id="image2" src="assets/img/Comparison with worldwide female employment rate.png" alt="Comparison with worldwide female employment rate">
+</div>
+
+<!-- JavaScript code -->
+<script>
+    const imageSelector_director = document.getElementById("image-selector_director");
+    const image_director = document.getElementById("image2");
+
+    // Add a change event listener to the select element
+    imageSelector_director.addEventListener("change", function () {
+        // Set the src attribute of the image to the selected value
+        image_director.src = this.value;
+    });
+</script>
+
+<style>
+    #gallery_director {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #image-selector-container {
+        margin-bottom: 50px;
+    }
+
+    #gallery_director img {
+        width: flex;
+        height: 400px;
+        object-fit: cover;
+        display: block;
+        margin: 0 auto;
+        position: relative;
+    }
+   
+</style>
+
+  
 
   <br/>
   <br/>
@@ -375,7 +509,201 @@ We want to analyse gender equality not because it is a buzzword or a trendy topi
         </div>
       </div>
 
-      <p><font size= 6">PLACES FOR INTERACTIVE PLOTS -4 directors/writers genre.html</font></p>
+      <!-- Top male director genre distribution-->
+
+      <div id="gallery_topgdirectorm">
+        <select id="image-selector_topdirectorm">
+            <option value="assets/img/1908-2013_directormale.png">Average of total dataset</option>
+            <option value="assets/img/1908-1935_directormale.png">Period: 1908-1935</option>
+            <option value="assets/img/1935-1945_directormale.png">Period: 1935-1945</option>
+            <option value="assets/img/1945-1990_directormale.png">Period: 1945-1990</option>
+            <option value="assets/img/1990-2013_directormale.png">Period: 1990-2013</option>
+        </select>
+        <img id="image_topdirectorm" src="assets/img/1908-2013_directormale.png" alt="Average of total dataset">
+    </div>
+    
+    <!-- JavaScript code -->
+    <script>
+        const image_Selector_topdirectorm = document.getElementById("image-selector_topdirectorm");
+        const image_topdirectorm = document.getElementById("image_topdirectorm");
+    
+        // Add a change event listener to the select element
+        image_Selector_topdirectorm.addEventListener("change", function () {
+            // Set the src attribute of the image to the selected value
+            image_topdirectorm.src = this.value;
+        });
+    </script>
+    
+    <style>
+        #gallery_topgdirectorm {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+    
+        #image-selector-container {
+            margin-bottom: 50px;
+        }
+    
+        #gallery_topgdirectorm img {
+            width: flex;
+            height: 400px;
+            object-fit: cover;
+            display: block;
+            margin: 0 auto;
+            position: relative;
+        }
+    </style>
+    <!--  end topmaledirector  -->
+  </br>
+</br>
+    <!-- Top female director genre distribution ------------------------------------------------------------------------- -->
+
+<div id="gallery_topgdirectorf">
+  <select id="image-selector_topdirectorf">
+      <option value="assets/img/1908-2013_directorfemale.png">Average of total dataset</option>
+      <option value="assets/img/1908-1935_directorfemale.png">Period: 1908-1935</option>
+      <option value="assets/img/1935-1945_directorfemale.png">Period: 1935-1945</option>
+      <option value="assets/img/1945-1990_directorfemale.png">Period: 1945-1990</option>
+      <option value="assets/img/1990-2013_directorfemale.png">Period: 1990-2013</option>
+  </select>
+  <img id="image_topdirectorf" src="assets/img/1908-2013_directorfemale.png" alt="Average of total dataset">
+</div>
+
+<!-- JavaScript code -->
+<script>
+  const image_Selector_topdirectorf = document.getElementById("image-selector_topdirectorf");
+  const image_topdirectorf = document.getElementById("image_topdirectorf");
+
+  // Add a change event listener to the select element
+  image_Selector_topdirectorf.addEventListener("change", function () {
+      // Set the src attribute of the image to the selected value
+      image_topdirectorf.src = this.value;
+  });
+</script>
+
+<style>
+  #gallery_topgdirectorf {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+  }
+
+  #image-selector-container {
+      margin-bottom: 50px;
+  }
+
+  #gallery_topgdirectorf img {
+      width: flex;
+      height: 400px;
+      object-fit: cover;
+      display: block;
+      margin: 0 auto;
+      position: relative;
+  }
+</style>
+
+      <!--  end topfemaledirector  -->
+    </br>
+  </br>
+      <!-- Top male writer genre distribution ------------------------------------------------------------------------- -->
+
+<div id="gallery_topgwriterm">
+  <select id="image-selector_topwriterm">
+      <option value="assets/img/1908-2013_writermale.png">Average of total dataset</option>
+      <option value="assets/img/1908-1935_writermale.png">Period: 1908-1935</option>
+      <option value="assets/img/1935-1945_writermale.png">Period: 1935-1945</option>
+      <option value="assets/img/1945-1990_writermale.png">Period: 1945-1990</option>
+      <option value="assets/img/1990-2013_writermale.png">Period: 1990-2013</option>
+  </select>
+  <img id="image_topwriterm" src="assets/img/1908-2013_writermale.png" alt="Average of total dataset">
+</div>
+
+<!-- JavaScript code -->
+<script>
+  const image_selector_topwriterm = document.getElementById("image-selector_topwriterm");
+  const image_topwriterm = document.getElementById("image_topwriterm");
+
+  // Add a change event listener to the select element
+  image_selector_topwriterm.addEventListener("change", function () {
+      // Set the src attribute of the image to the selected value
+      image_topwriterm.src = this.value;
+  });
+</script>
+
+<style>
+  #gallery_topgwriterm {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+  }
+
+  #image-selector-container {
+      margin-bottom: 50px;
+  }
+
+  #gallery_topgwriterm img {
+      width: flex;
+      height: 400px;
+      object-fit: cover;
+      display: block;
+      margin: 0 auto;
+      position: relative;
+  }
+</style>
+
+<!--end top male writer genre-->
+</br>
+</br>
+<!-- Top female writer genre distribution ------------------------------------------------------------------------- -->
+
+<div id="gallery_topgwriterf">
+  <select id="image-selector_topwriterf">
+      <option value="assets/img/1908-2013_writerfemale.png">Average of total dataset</option>
+      <option value="assets/img/1908-1935_writerfemale.png">Period: 1908-1935</option>
+      <option value="assets/img/1935-1945_writerfemale.png">Period: 1935-1945</option>
+      <option value="assets/img/1945-1990_writerfemale.png">Period: 1945-1990</option>
+      <option value="assets/img/1990-2013_writefermale.png">Period: 1990-2013</option>
+  </select>
+  <img id="image_topwriterf" src="assets/img/1908-2013_writerfemale.png" alt="Average of total dataset">
+</div>
+
+<!-- JavaScript code -->
+<script>
+  const image_selector_topwriterf = document.getElementById("image-selector_topwriterf");
+  const image_topwriterf = document.getElementById("image_topwriterf");
+
+  // Add a change event listener to the select element
+  image_selector_topwriterf.addEventListener("change", function () {
+      // Set the src attribute of the image to the selected value
+      image_topwriterf.src = this.value;
+  });
+</script>
+
+<style>
+  #gallery_topgwriterf {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+  }
+
+  #image-selector-container {
+      margin-bottom: 50px;
+  }
+
+  #gallery_topgwriterf img {
+      width: flex;
+      height: 400px;
+      object-fit: cover;
+      display: block;
+      margin: 0 auto;
+      position: relative;
+  }
+</style>
+
+
+
+
   <!--  end off-screen  -->
 
 <!-- End On/Off-screen content-->
@@ -414,7 +742,151 @@ We want to analyse gender equality not because it is a buzzword or a trendy topi
       </p>
     </div>
   </div>
-  <p><font size= 6">PLACES FOR INTERACTIVE PLOTS -5  genre.html</font></p>
+  
+
+  <!-- Top genre distribution ------------------------------------------------------------------------- -->
+
+<div id="gallery_topgenre">
+  <select id="image-selector_topgenre">
+      <option value="assets/img/1888-2016_genretop.png">Average of total dataset</option>
+      <option value="assets/img/1888-1935_genretop.png">Period: 1888-1935</option>
+      <option value="assets/img/1935-1945_genretop.png">Period: 1935-1945</option>
+      <option value="assets/img/1945-1990_genretop.png">Period: 1945-1990</option>
+      <option value="assets/img/1990-2016_genretop.png">Period: 1990-2016</option>
+  </select>
+  <img id="image_topgenre" src="assets/img/1888-2016_genretop.png"
+      alt="Period: 1888-2016">
+</div>
+
+<!-- JavaScript code -->
+<script>
+  const image_Selector_topgenre = document.getElementById("image-selector_topgenre");
+  const image_topgenre = document.getElementById("image_topgenre");
+
+  // Add a change event listener to the select element
+  image_Selector_topgenre.addEventListener("change", function () {
+      // Set the src attribute of the image to the selected value
+      image_topgenre.src = this.value;
+  });
+</script>
+
+<style>
+  #gallery_topgenre {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+  }
+
+  #image-selector-container {
+      margin-bottom: 50px;
+  }
+
+  #gallery_topgenre img {
+      width: flex;
+      height: 400px;
+      object-fit: cover;
+      display: block;
+      margin: 0 auto;
+      position: relative;
+  }
+</style>
+<!--end top genre distribution-->
+</br>
+</br>
+<!-- Top female genre distribution ------------------------------------------------------------------------- -->
+
+<div id="gallery_topgenref">
+  <select id="image-selector_topgenref">
+      <option value="assets/img/1888-2016_genrefemale.png">Average of total dataset</option>
+      <option value="assets/img/1888-1935_genrefemale.png">Period: 1888-1935</option>
+      <option value="assets/img/1935-1945_genrefemale.png">Period: 1935-1945</option>
+      <option value="assets/img/1945-1990_genrefemale.png">Period: 1945-1990</option>
+      <option value="assets/img/1990-2016_genrefemale.png">Period: 1990-2016</option>
+  </select>
+  <img id="image_topgenref" src="assets/img/1888-2016_genrefemale.png" alt="Average of total dataset">
+</div>
+
+<!-- JavaScript code -->
+<script>
+  const image_Selector_topgenref = document.getElementById("image-selector_topgenref");
+  const image_topgenref = document.getElementById("image_topgenref");
+
+  // Add a change event listener to the select element
+  image_Selector_topgenref.addEventListener("change", function () {
+      // Set the src attribute of the image to the selected value
+      image_topgenref.src = this.value;
+  });
+</script>
+
+<style>
+  #gallery_topgenref {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+  }
+
+  #image-selector-container {
+      margin-bottom: 50px;
+  }
+
+  #gallery_topgenref img {
+      width: flex;
+      height: 400px;
+      object-fit: cover;
+      display: block;
+      margin: 0 auto;
+      position: relative;
+  }
+</style>
+<!--end top female genre distribution-->
+</br>
+</br>
+<!-- Top male genre distribution ------------------------------------------------------------------------- -->
+
+<div id="gallery_topgenrem">
+  <select id="image-selector_topgenrem">
+      <option value="assets/img/1888-2016_genremale.png">Average of total dataset</option>
+      <option value="assets/img/1888-1935_genremale.png">Period: 1888-1935</option>
+      <option value="assets/img/1935-1945_genremale.png">Period: 1935-1945</option>
+      <option value="assets/img/1945-1990_genremale.png">Period: 1945-1990</option>
+      <option value="assets/img/1990-2016_genremale.png">Period: 1990-2016</option>
+  </select>
+  <img id="image_topgenrem" src="assets/img/1888-2016_genremale.png" alt="Average of total dataset">
+</div>
+
+<!-- JavaScript code -->
+<script>
+  const image_Selector_topgenrem = document.getElementById("image-selector_topgenrem");
+  const image_topgenrem = document.getElementById("image_topgenrem");
+
+  // Add a change event listener to the select element
+  image_Selector_topgenrem.addEventListener("change", function () {
+      // Set the src attribute of the image to the selected value
+      image_topgenrem.src = this.value;
+  });
+</script>
+
+<style>
+  #gallery_topgenrem {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+  }
+
+  #image-selector-container {
+      margin-bottom: 50px;
+  }
+
+  #gallery_topgenrem img {
+      width: flex;
+      height: 400px;
+      object-fit: cover;
+      display: block;
+      margin: 0 auto;
+      position: relative;
+  }
+</style>
+
 <!-- end gengre gap -->
 
 
@@ -596,7 +1068,7 @@ We want to analyse gender equality not because it is a buzzword or a trendy topi
   <div class="row">
 	<div class="col-lg-12 text-center">
 	  <h2 class="section-heading text-uppercase">More</h2>
-	  <h3 class="section-subheading text-muted">Bechtel Test</h3>
+	  <h3 class="section-subheading text-muted">Bechdel Test</h3>
 	   </div>
     </div>
 	</div>
@@ -628,9 +1100,17 @@ We want to analyse gender equality not because it is a buzzword or a trendy topi
       </div>
     </div>
   </br>
+</br>
+  <div style="text-align: center;">
+    <img src="assets/img/Bechlet1.png">
+    </div>
 
 
-  <p><font size= 6">PLACES FOR  PLOTS -6 bechlet_test.html</font></p>
+  </br>
+</br>
+    <div style="text-align: center;">
+      <img src="assets/img/Bechtlet2.png">
+      </div>
 
 </section>
 
